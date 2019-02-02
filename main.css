@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    min-height: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding-left: 70px;
+}
+
+nav{
+    padding-top: 24px;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #979797;
+    padding: 16px;
+    font-size: 18px;
+}
+
+nav li a:hover{
+    color: #212121;
+}
+
+.coverPicture{
+    height: 55vh;
+    width: 100%;
+    position: relative;
+    background-image:url(/images/Computer-Science.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: slider 6s infinite;
+    transition: background ease-out;
+}
+
+@keyframes slider{
+    50%{background-image: url(images/img3.jpg);}
+    100%{background-image: url(images/Computer-Science.jpg);}
+}
+
+.coverPicture h1{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 40vh;
+    font-size: 3em;
+    color: white;
+}
+
+.Projects{
+    min-height: 100vh;
+    width: 100%;
+    padding: 32px;
+    box-sizing: border-box;
+    
+    visibility: visible;
+    display: none;
+}
+
+.project1{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.projectimage1{
+    grid-column: 1 / 2;
+    width: 60vw;
+    padding: 32px;
+}
+
+.projectimage1 img{
+    
+    width: 100%;
+}
+
+.content1{
+    grid-column: 2 / 3 ;
+    padding: 32px;
+}
+
+.About{
+    padding: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    visibility: hidden;
+    display: none;
+}
+
+.About p{
+    font-size: 1.3em;
+    margin-top: 16px;
+    
+    line-height: 2;
+}
+
+.Contact{
+    padding: 70px;
+    width: 100%;
+    box-sizing: border-box;
+
+    visibility: hidden;
+    display: none;
+}
+.Contact h1{
+    font-size: 1.4em;
+}
+
+.Contact p{
+    font-size: 1.3em;
+}
+
+.phone{
+    background-color: #e2e2e2;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.Email{
+    background-color: #e2e2e2;
+    padding: 16px;
+}
+
+.education{
+    padding: 70px;
+
+    visibility: hidden;
+    display: none;
+}
+
+.Institution{
+    margin-top: 16px;
+    border: 2px solid #e2e2e2;
+    padding: 24px 8px 24px 16px;
+    border-radius: 10px;
+}
+
+footer{
+    height: 8vh;
+    width: 90%;
+    margin: 32px auto;
+    border: 2px solid #dadada;
+    text-align: center;
+    padding-top: 4vh;
+    border-radius: 5px;
+    color: #929292;
+}
